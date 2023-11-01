@@ -7,6 +7,7 @@ var ws = new WebSocketServer({ port: PORT });
 
 ws.on('listening', function () {
 	console.log("Server started with port", PORT);
+	console.log(process.env);
 });
 
 ws.on('connection', function (connection) {
